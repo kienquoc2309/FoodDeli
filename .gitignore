@@ -1,4 +1,54 @@
+# Global ignores for all subprojects
+node_modules/
+dist/
+dist-ssr/
+*.log
+*.local
+.DS_Store
+
+# Logs
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Specific to frontend/admin projects (Vite + ReactJS)
+frontend/node_modules/
+frontend/dist/
 frontend/.env
-frontend/node_modules
+frontend/.env.*
+
+admin/node_modules/
+admin/dist/
+admin/.env
+admin/.env.*
+
+# Specific to backend project (Node.js/Express)
+backend/node_modules/
 backend/.env
-backend/node_modules
+backend/.env.*
+
+# Ignore build output for deployment (if applicable)
+backend/build/
+frontend/build/
+admin/build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Optional: Ignore lockfiles if you don't want to include them in version control
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
