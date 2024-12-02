@@ -3,8 +3,6 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import validator from 'validator';
 
-console.log(process.env.JWT_SECRET);
-
 //login user
 
 const loginUser = async (req, res) => {
