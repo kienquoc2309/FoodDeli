@@ -6,7 +6,7 @@ const StoreContextProvider = props => {
 	const [cartItems, setCartItems] = useState({});
 	const url = 'http://localhost:5000';
 	const [token, setToken] = useState('');
-	const [food_list, setFootList] = useState([]);
+	const [food_list, setFoodList] = useState([]);
 
 	const addToCart = async itemId => {
 		if (!cartItems[itemId]) {
@@ -47,7 +47,7 @@ const StoreContextProvider = props => {
 	const fetchFoodList = async () => {
 		try {
 			const response = await axios.get(`${url}/api/food/list`);
-			setFootList(response.data.data);
+			setFoodList(response.data.data);
 		} catch (error) {}
 	};
 

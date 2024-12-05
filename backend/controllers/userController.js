@@ -31,7 +31,7 @@ const loginUser = async (req, res) => {
 };
 
 const createToken = id => {
-	return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '60m' });
+	return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '60d' });
 };
 
 //register user
